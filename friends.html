@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruang Pribadi Arif | Teman</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Inter:wght@100..900&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            background-image:
+                linear-gradient(to right, rgba(0, 1, 171, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 1, 171, 0.03) 1px, transparent 1px),
+                linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%);
+            background-size: 20px 20px, 20px 20px, 100% 100%;
+            background-attachment: fixed;
+            font-family: 'Inter', sans-serif;
+        }
+
+        a {
+            color: #0001ab;
+            text-decoration: underline;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 16px;
+            min-height: 100vh;
+        }
+
+        .site-header {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #c5c4da;
+        }
+
+        .page-title,
+        .section-title {
+            font-family: "Newsreader", serif;
+            margin: 0;
+        }
+
+        .page-title {
+            margin-bottom: 16px;
+            font-size: 40px;
+        }
+
+        .section-title {
+            margin-bottom: 24px;
+            font-size: 32px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 24px;
+            padding: 8px 0;
+            border-top: 1px solid #c5c4da;
+            border-bottom: 1px solid #c5c4da;
+        }
+
+        .nav a {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 32px;
+            padding: 32px;
+            background-color: #ffffff;
+            outline: 1px solid #757589;
+        }
+
+        .friends-grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .friend-card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 16px;
+            border: 1px solid #c5c4da;
+        }
+
+        .friend-photo {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+            filter: grayscale(100%);
+            outline: 1px solid #757589;
+        }
+
+        .friend-name {
+            margin: 0 0 4px;
+            font-weight: 700;
+        }
+
+        .friend-role {
+            margin: 0;
+            font-size: 14px;
+            color: #454557;
+        }
+
+        @media (min-width: 768px) {
+            .friends-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="site-header">
+            <h1 class="page-title">Teman</h1>
+
+            <nav class="nav">
+                <a href="index.html">Beranda</a>
+                <a href="personal.html">Data Pribadi</a>
+                <a href="family.html">Keluarga</a>
+                <a href="friends.html">Teman</a>
+                <a href="hobbies.html">Hobi</a>
+            </nav>
+        </header>
+
+        <!-- ISI -->
+        <section class="section">
+            <h2 class="section-title">Lingkungan Pertemanan</h2>
+
+            <div class="friends-grid">
+                <div class="friend-card">
+                    <img class="friend-photo"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJYvy9IT-W1L8_cbwbxdOocBdCBUSb8WtXM1_EZETc3IurVFhJKTkbBo7Bh2eUNX1xIRppp9SMdAI2vORSWbzT1-eOvVfignZH4_Xnmj9F7noeWObeMEciwRHsJJ_jD0fvfSDqQqFCEigsEZg7pjTKQeA-9MZN-7-Br6Cjf2ENkE6zguyVaaE-QvR33OzDGGILiY_p0VgATjYip_K32uqGrRgJJylwOyYCTJccI0yqQfthZbc2f877jqAklTX74y0R3RUUM5QE0CQ" />
+                    <div>
+                        <p class="friend-name">Dani</p>
+                        <p class="friend-role">Teman kuliah</p>
+                    </div>
+                </div>
+
+                <div class="friend-card">
+                    <img class="friend-photo"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAHoMjUQidJLFxLWk3-_TClEp7TvGS7xRQx_yVomlRxHZJj24ykhuz7BhnUeFxMEsxmf3efK9mW6XBV4q56gYxVHHagkpNsAexw0sgB7mzjR3fNmjWr-FQVeg_GZqnE6FGsjCodWdfRbO_NS4U5wWLolXlPzuhShyYaJH-8V4auCHBULLv99zzF9likrFOoShh5ZSOLIlYihyKXqnOd209Avbo_lpOM3DPa2-x_upAwKQ9wj6Fa7kCkfhVqx_vTzrqhBtLxdqAGgs" />
+                    <div>
+                        <p class="friend-name">Candra</p>
+                        <p class="friend-role">Teman kuliah</p>
+                    </div>
+                </div>
+
+                <div class="friend-card">
+                    <img class="friend-photo"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ2hNj0rWVqF3BN7r_UBwT6h6JpEkWGX-pe_TH7ZJOGYJ1mIClEiyGyG4A5PQNE-7jGbTU6DCSgnCOaMUcWsihZafcFuEna4qeXQKvGb34qSs8zwAOCPLq4HAEMMVaF0KIc2qwVLMn8BG3sWDhZXg3JB0DHUKKelz6V7rPlJ8qYsfgjZM7NnNQwhoadaClerH_0xqWrLuVBRxjGNqFd4PA3EH5rtrAaNntvB2oxUOnrycMAU59IT9R4KrTIiKXLEaib-j8JHH7KdY" />
+                    <div>
+                        <p class="friend-name">Andre</p>
+                        <p class="friend-role">Teman kuliah</p>
+                    </div>
+                </div>
+
+                <div class="friend-card">
+                    <img class="friend-photo"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsK00bc3Arr9J5XzH1LjPPbwW9cK0rJkSuGjkwfKspAC85w1RL1UYxzUL5-MxJOCwwxEFTrG7mJdiU71HTCKNfbtU24m7hkIbV905znsrUOMEYbaqeLbgt8T6_930JGTVp_uVz5vWVwRSbUEONIwYKgZ-CQZaM8CTSEx8KelZifnLKC8p8D-JHUdPGnYDMt-yCP_FEMY2Da3L30eiGoEtsiOsm9gQgTE1JBkV1pAFhSPuu6y06HbKZSAIUvyWPY-yzsw1Lm_4yeGU" />
+                    <div>
+                        <p class="friend-name">Irfan</p>
+                        <p class="friend-role">Teman kuliah</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
